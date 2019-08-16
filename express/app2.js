@@ -8,6 +8,8 @@ var app=new Express();
 
 app.set('view engine','ejs');
 
+app.use(Express.static(__dirname+"/public"));
+
 //rought setting....
 
 app.get('/',(Request,Response)=>{
